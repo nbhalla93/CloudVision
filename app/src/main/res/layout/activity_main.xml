@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.google.sample.cloudvision.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#76B23A"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#8BC34A"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="445dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|fill_horizontal|end"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="#8BC34A"
+        android:backgroundTintMode="src_in"
+        android:baselineAlignBottom="false"
+        android:contextClickable="false"
+        android:cropToPadding="false"
+        android:foregroundTint="#8BC34A"
+        android:src="@mipmap/cam_upload_black"
+        app:backgroundTint="#8BC34A"
+        app:borderWidth="25dp"
+        app:fabSize="mini"
+        app:useCompatPadding="false" />
+
+
+</android.support.design.widget.CoordinatorLayout>
